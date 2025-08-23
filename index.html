@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error{
+            display: none;
+            height: 100vh;
+            font-weight: bolder;
+            font-size: xx-large;
+            color: red;
+        }
+        @media(max-width:1150px){
+            .container{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        @media(max-width:1000px){
+            .container{
+                display: none;
+            }
+            .error{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body class="bg-cyan-100">
+    
+    <h1 class="error">Oops!...........it is Desktop Application</h1>
+    <div class="container h-screen flex justify-around items-center">
+        <div class="labels">
+            <h1 class="font-bold text-7xl text-blue-600">Calculator</h1>
+            <p class="font-bold text-center text-2xl text-green-300">using Tailwind CSS & HTML & Javascript</p>
+        </div>
+        <div class="sub-container grid grid-cols-1 gap-6 bg-black w-[28%] h-[70%] rounded-md shadow-xl px-6 py-8">
+            <input class="text-white font-bold text-3xl text-right outline-none" type="text" value="0">
+            <div class="line1 grid grid-cols-4 gap-3">
+                <button class="text-green-300 font-bold shadow-[-5px_-5px_15px] shadow-gray-600 rounded-3xl" value="AC">AC</button>
+                <button class="text-green-300 font-bold shadow-[-5px_-5px_15px] shadow-gray-600 rounded-3xl" value="DE">DE</button>    
+                <button class="text-green-300 font-bold shadow-[-5px_-5px_15px] shadow-gray-600 rounded-3xl" value="%">%</button>
+                <button class="text-green-300 font-bold shadow-[-5px_-5px_15px] shadow-gray-600 rounded-3xl" value="/">/</button>
+            </div>
+            <div class="line2 grid grid-cols-4 gap-3">
+                <button class="text-white text-lg shadow-[-5px_-5px_15px] shadow-gray-600 rounded-3xl" value="7">7</button>
+                <button class="text-white text-lg shadow-[-5px_-5px_15px] shadow-gray-600 rounded-3xl" value="8">8</button>
+                <button class="text-white text-lg shadow-[-5px_-5px_15px] shadow-gray-600 rounded-3xl" value="9">9</button>
+                <button class="text-green-300 font-bold shadow-[-5px_-5px_15px] shadow-gray-600 rounded-3xl" value="*">X</button>
+            </div>
+            <div class="line3 grid grid-cols-4 gap-3">
+                <button class="text-white text-lg shadow-[-5px_-5px_15px] shadow-gray-600 rounded-3xl" value="4">4</button>
+                <button class="text-white text-lg shadow-[-5px_-5px_15px] shadow-gray-600 rounded-3xl" value="5">5</button>
+                <button class="text-white text-lg shadow-[-5px_-5px_15px] shadow-gray-600 rounded-3xl" value="6">6</button>
+                <button class="text-green-300 font-bold shadow-[-5px_-5px_15px] shadow-gray-600 rounded-3xl" value="-">-</button>
+            </div>
+            <div class="line4 grid grid-cols-4 gap-3">
+                <button class="text-white text-lg shadow-[-5px_-5px_15px] shadow-gray-600 rounded-3xl" value="1">1</button>
+                <button class="text-white text-lg shadow-[-5px_-5px_15px] shadow-gray-600 rounded-3xl" value="2">2</button>
+                <button class="text-white text-lg shadow-[-5px_-5px_15px] shadow-gray-600 rounded-3xl" value="3">3</button>
+                <button class="text-green-300 font-bold shadow-[-5px_-5px_15px] shadow-gray-600 rounded-3xl" value="+">+</button>
+            </div>
+            <div class="line5 grid grid-cols-4 gap-3">
+                <button class="text-white text-lg shadow-[-5px_-5px_15px] shadow-gray-600 rounded-3xl" value=".">.</button>
+                <button class="text-white text-lg shadow-[-5px_-5px_15px] shadow-gray-600 rounded-3xl" value="0">0</button>
+                <button class="text-green-300 font-bold text-2xl shadow-[-5px_-5px_15px] shadow-gray-600 rounded-3xl col-span-2" value="=">=</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</body>
+</html>
