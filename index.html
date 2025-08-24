@@ -5,34 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .error{
-            display: none;
-            height: 100vh;
-            font-weight: bolder;
-            font-size: xx-large;
-            color: red;
-        }
-        @media(max-width:1150px){
+        @media(max-width:375px){
             .container{
                 display: flex;
                 flex-direction: column;
             }
         }
-        @media(max-width:1000px){
-            .container{
-                display: none;
-            }
-            .error{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        }
     </style>
 </head>
 <body class="bg-cyan-100">
-    
-    <h1 class="error">Oops!...........it is Desktop Application</h1>
     <div class="container h-screen flex justify-around items-center">
         <div class="labels">
             <h1 class="font-bold text-7xl text-blue-600">Calculator</h1>
